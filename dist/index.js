@@ -5,6 +5,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
+app.get('/health', (req, res) => {
+    res.status(200).send('OK');
+});
 app.get('/', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     const host = req.headers.host;
