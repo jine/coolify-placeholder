@@ -21,14 +21,19 @@ app.get('/', (req, res) => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${domainText}</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-    }
-    h1 {
-      font-family: 'Open Sans', sans-serif;
-    }
-  </style>
+   <style>
+     body {
+       font-family: 'Open Sans', sans-serif;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       margin: 0;
+     }
+     h1 {
+       font-size: 4rem;
+     }
+   </style>
 </head>
 <body>
   <h1>${domainText}</h1>
